@@ -25,7 +25,7 @@ requirements:
     - cssselect >=0.9
     - lxml
     - packaging
-    - pkg_resources
+    - setuptools
     - w3lib >=1.19.0
 
 test:
