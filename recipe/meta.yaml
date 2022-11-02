@@ -1,5 +1,5 @@
 {% set name = "parsel" %}
-{% set version = "1.6.0" %}
+{% set version = "1.7.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 70efef0b651a996cceebc69e55a85eb2233be0890959203ba7c3a03c72725c79
+  sha256: 0254133cb0304de13fcc4857bb8214ff70d698872761fa6be8374e1bbbd58192
 
 build:
   number: 0
@@ -17,14 +17,14 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.7
     - pip
     - pytest-runner
   run:
-    - python >=3.5
+    - python >=3.7
     - cssselect >=0.9
     - lxml
-    - six >=1.6.0
+    - packaging
     - w3lib >=1.19.0
 
 test:
