@@ -23,9 +23,9 @@ requirements:
   run:
     - python >=3.7
     - cssselect >=0.9
+    - jmespath
     - lxml
     - packaging
-    - setuptools
     - w3lib >=1.19.0
 
 test:
