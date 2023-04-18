@@ -1,11 +1,11 @@
-About parsel
-============
+About parsel-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/parsel-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/parsel/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/parsel-feedstock/blob/main/LICENSE.txt)
 
 Summary: Parsel is a library to extract data from HTML and XML using XPath and CSS selectors
 
