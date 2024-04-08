@@ -11,7 +11,7 @@ source:
   sha256: 14e00dc07731c9030db620c195fcae884b5b4848e9f9c523c6119f708ccfa9ac
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -19,7 +19,6 @@ requirements:
   host:
     - python >=3.7
     - pip
-    - pytest-runner
   run:
     - python >=3.7
     - cssselect >=0.9
