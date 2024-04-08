@@ -1,5 +1,5 @@
 {% set name = "parsel" %}
-{% set version = "1.9.0" %}
+{% set version = "1.9.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a5a6bcb0c5fc741540ba3075636ff5cb968852a78cc16ae82250e5d486fa7d48
+  sha256: 14e00dc07731c9030db620c195fcae884b5b4848e9f9c523c6119f708ccfa9ac
 
 build:
   number: 0
