@@ -19,7 +19,7 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools
+    - hatchling >=1.27.0
   run:
     - python >={{ python_min }}
     - cssselect >=1.2.0
