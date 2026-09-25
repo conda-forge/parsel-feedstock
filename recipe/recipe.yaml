@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: parsel
-  version: 1.11.0
+  version: 1.12.0
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 5925fe087eb16fc404a7ed91e31e2c1e2a9b230da4b64f34d81358c0d0e27e88
+  sha256: 25dabcf09578c3d571d905de4428194cf932ce1c736d8961c23886956074e330
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-build-isolation --no-deps
 
@@ -27,9 +27,7 @@ requirements:
     - cssselect >=1.2.0
     - jmespath >=1.0.0
     - lxml >=5.1.0
-    - packaging >=23.0
     - w3lib >=1.19.0
-
 tests:
   - python:
       imports:
