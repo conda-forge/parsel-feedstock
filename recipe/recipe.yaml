@@ -1,16 +1,15 @@
 schema_version: 1
 
 context:
-  name: parsel
-  version: 1.12.0
+  version: "1.12.1"
 
 package:
-  name: ${{ name|lower }}
+  name: parsel
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 25dabcf09578c3d571d905de4428194cf932ce1c736d8961c23886956074e330
+  url: https://pypi.org/packages/source/p/parsel/parsel-${{ version }}.tar.gz
+  sha256: f526df846f3a91e13f5499156ea3e755114834cd126b62cd1d784ef558f3a713
 
 build:
   number: 0
@@ -33,7 +32,9 @@ tests:
       imports:
         - parsel
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - '*'
 
 about:
   summary: Parsel is a library to extract data from HTML and XML using XPath and CSS selectors
